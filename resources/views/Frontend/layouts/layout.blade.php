@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{asset('images/favicon_1.ico')}}">
-    <title>@isset ($title) {{ $title }} @endisset</title>
+    <title>123 Capital</title>
     <meta name="description" content="@isset ($meta_description) {{ $meta_description }} @endisset">
     <meta name="image" content="{{asset('images/logo-frioyapty.png')}}">
     <meta itemprop="name" content="@isset ($meta_name) {{ $meta_name }} @endisset">

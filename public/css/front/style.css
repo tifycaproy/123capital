@@ -65,8 +65,40 @@
 	
 /*  A. General
 ----------------------------*/
+.titulo{
+	font-size: 60px;
+    font-weight: bolder;
+    color: #3d3d3d;
+    line-height: 55px;
+    padding-left: 70px;
+}
+
+#pasos .intro_pasos>img {
+    margin: -90px auto 0;
+    max-width: 300px;
+}
+
+#pasos .intro_pasos p {
+    color: #d6d6d6;
+    font-size: 20rem;
+    font-family: "Barlow Black";
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 21px;
+    margin-bottom: 10.5px;
+}
+
+#pasos .intro_pasos {
+    margin-bottom: 90px;
+}
+
+.destacado{
+	color: #EC4B25;
+}
+
 .form-filter{
-	margin-top: 20rem; 
+	margin-top: 15rem; 
 	position: absolute; 
 	z-index: 999
 }
@@ -1751,6 +1783,21 @@ table.right_table {
 
 /*  F. Buttons
 ----------------------------*/
+
+.botones{
+	padding-left: 70px;
+	padding-top: 30px;
+}
+
+.btn-2{
+	background-color: #3d3d3d;
+	margin-top: 10px;
+}
+
+.btn-2:hover{
+	background-color: #2c2c2c;
+	color: #fff;
+}
 
 .default-btn, .btn-inventory, button, input[type="reset"], input[type="button"], input[type="submit"] {
 	font-size: 15.5px;

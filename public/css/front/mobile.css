@@ -737,6 +737,19 @@ footer .container .row > div {
 
 @media (min-width: 320px) {
 
+	.titulo {
+        font-size: 40px;
+        font-weight: bolder;
+        color: #3d3d3d;
+        line-height: 35px;
+        padding-left: 20px;
+    }
+
+	.botones {
+        padding-left: 20px;
+        padding-top: 20px;
+	}
+	
 .flip, .flip .card, .flip .card .face {
 	width: 100%;
 	max-width: 100%;
@@ -1867,6 +1880,18 @@ body .inventory_box.car_listings.boxed.boxed_full .col-md-4:nth-child(3n + 1) {
 }
 
 @media (min-width:768px) {
+
+	#pasos .intro_pasos>img {
+		max-width: 100%;
+	}
+
+.titulo{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #3d3d3d;
+    line-height: 55px;
+	padding-left: 70px;
+}
 
 .left-none {
 	float: left;

@@ -7,59 +7,35 @@ use Carbon\Carbon;
 
 
 <!-- Home -->
-<div class="clearfix"></div>
+<div class="clearfix">
+
+</div>
 <section class="banner-wrap">
     <div class="banner">
         {{-- FILTRO --}}
-        <div class="col-lg-5 col-xs-12 form-filter" style="">
+        <div class="col-md-8 col-xs-12 form-filter" style="">
             <div class="class=search-form margin-top-20 padding-vertical-20"  >
-                <form class="form-signin inventory-heading efficiency-rating text-center padding-vertical-15 margin-bottom-40 "  action="{{route('coches')}}" method="GET">
-                    <h2 style="text-align: center;" ><b>Filtro de Búsqueda</b></h2>
-                    <br>
-                    <!--select class="form-control">
-                        <option>Elige un tipo de coche</option>
-                        @foreach($tipos as $tipo)
-                            <option value="{{$tipo->id}}">{{$tipo->descripcion}}</option>
-                          @endforeach
-                      </select-->
-
-                      <select class="form-control" name="marca" id="marca">
-                        <option value="">Elige una marca</option>
-                          @foreach($marcas as $marca)
-                            <option value="{{$marca->id}}">{{$marca->descripcion}}</option>
-                          @endforeach
-                      </select>
-
-                      <select class="form-control" name="modelo" id="modelo">
-                        <option value="">Elige un modelo</option>
-                            @foreach($modelos as $modelo)
-                             <option value="{{$modelo->id}}">{{$modelo->descripcion}}</option>
-                            @endforeach
-                      </select>
-                    
-                    <button class="lg-button btn-block" type="submit">Buscar</button>
-                    <br>
-                    <!--h5 style="text-align: center;" >Ver todas las <a href="{{route('registro')}}"><b>Ofertas</b></h5-->
-                </form>
+                <div class="row ">
+                    <h1 class="titulo"><span class="destacado">Invierte en movilidad,</span> un mercado en constante <span class="destacado">crecimiento.</span></h1>
+                </div>
+                <div class="col-md-6 col-sm-8 botones">
+                    <button class="lg-button btn-block" type="submit">¡Invierte ahora!</button>
+                    <button class="lg-button btn-block btn-2" type="submit">¿Cómo funciona 123Capital?</button>
+                </div>
             </div>
         </div>
         {{-- SLIDER --}}
-        <div id=" carousel-example-generic" class=" col-xs-12 carousel slide" style="padding: 0px" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-            @foreach( $sliders as $slider )
-              <div class="item item hslider {{ $loop->first ? 'active' : '' }}  carrousel" style="background-image: url('/images/sliders/{{$slider->url_imagen}}');   ">
-                <div class="carousel-caption">
-                    <h2 class="a">{{ $slider->titulo }}</h2>
-                    <p>  {!! $slider->contenido !!}</p>
-                </div>
+
+              <div class="item active carrousel" style="background-image: url({{asset('images/slide-2.png')}}) ">
               </div>
-            @endforeach    
+              
             </div>
-            <ol class="carousel-indicators">
-            @foreach( $sliders as $slider )
-              <li data-target="#carouselExampleControls" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
-            @endforeach
-            </ol>
+          
+           
         </div>
     </div>
 </section>
@@ -67,27 +43,39 @@ use Carbon\Carbon;
 <section class="content">
     <div class="container">
 
-            <div class="row generate_new">
-                <div class="inventory_box car_listings boxed boxed_full row">
-                    <h4 class="margin-bottom-25" style="color: #EC4B25; margin-top: 30px"><strong>DESTACADOS</strong> </h4>
-                        @foreach( $vehiculos as $vehiculo )
-
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="height: 250px; overflow: hidden; padding-right: 0px">
-                            <?php  $anio=Carbon::parse($vehiculo->fecha_matriculacion); ?>
-                            <a class="" href="{{url('categorias/listado/detalle/'.$vehiculo->id)}}">
-                                <div class="title" style="font-size: 2rem; color: black; margin-bottom: 10px">{{$vehiculo->marca}} {{$vehiculo->modelo}} {{$anio->year}}</div> 
-                                <div class="" style="background-image: url('{{ url('http://localhost/123subasta/public/images/galeria/'.$vehiculo->img) }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100%; width: 100%">
-                                 
-                                
-                                    <div class="" style="background-color: rgba(0,0,0,.7); position: absolute; bottom: 0; width: 100%; padding: 10px; text-align: center; font-size: 3rem; font-weight: bold">
-                                        $43,995
-                                    </div>
-                                </div>
-                            </a> 
-
-                        </div>
-                        @endforeach
-                </div>
+        <div class="row">
+            <div class="col-sm-12">
+              <h1 class="home_encabezado">
+                <strong>INVIERTE TU DINERO</strong>
+                <span>en tres sencillos pasos</span>
+              </h1>
+            </div>
+    
+            <div class="col-sm-4">
+              <div class="intro_pasos">
+                <p>1</p>
+                <img src="https://fondea.es/images/fondea/home/intro_paso_1.png" class="img-responsive animation-slideRight">
+                <h3>Elige el <strong>VEHÍCULO</strong></h3>
+              </div>        
+            </div>
+    
+            <div class="col-sm-4">
+              <div class="intro_pasos">
+                <p>2</p>
+                <img src="https://fondea.es/images/fondea/home/intro_paso_2.png" class="img-responsive animation-slideDown">
+                <h3>Decide la cantidad que quieres <strong>INVERTIR</strong></h3>
+              </div>              
+            </div>
+    
+            <div class="col-sm-4">
+              <div class="intro_pasos">
+                <p>3</p>
+                <img src="https://fondea.es/images/fondea/home/intro_paso_3.png" class="img-responsive animation-slideLeft">
+                <h3>En un máximo de 7 meses recibirás un <strong>8%* de RENTABILIDAD</strong></h3>
+                <small class="mas_info"><a href="https://fondea.es/faqs#faqs-accordion-4-row">* Más información</a></small>
+              </div>              
+            </div>
+          </div>
             </div>
 
         <div class="inner-page homepage margin-bottom-none">
