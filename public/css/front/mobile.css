@@ -46,6 +46,8 @@
 }
 }
 
+
+
 @media (min-width: 1170px) {
 
 .controls {
@@ -737,8 +739,12 @@ footer .container .row > div {
 
 @media (min-width: 320px) {
 
+.invierte{
+	font-size: x-large;
+}
+
 	.titulo {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: bolder;
         color: #3d3d3d;
         line-height: 35px;
@@ -1860,6 +1866,7 @@ div.inventory .options-primary {
 
 .boxed div.inventory .inventory .title {
 	max-width: 275px;
+	left:20px;
 }
 
 .boxed div.inventory .inventory .price {
@@ -1879,7 +1886,21 @@ body .inventory_box.car_listings.boxed.boxed_full .col-md-4:nth-child(3n + 1) {
 }
 }
 
+
+
 @media (min-width:768px) {
+
+.btn-block{
+	width: 125%;
+}
+
+	.invierte{
+		font-size: xx-large;
+	}
+
+	.figure {
+		left: 35px !important;
+	}
 
 	#pasos .intro_pasos>img {
 		max-width: 100%;
@@ -2516,6 +2537,7 @@ div.inventory .options-secondary {
 
 .boxed div.inventory .inventory .title {
 	max-width: 275px;
+	left: 20px;
 }
 
 .boxed.boxed_full div.inventory .inventory .price {
@@ -3014,6 +3036,21 @@ header .bottom-header .navbar-default .navbar-brand .logo .primary_text {
  
 @media (min-width: 1200px) {
 
+	.figure {
+		left: -8px !important;
+	}
+
+	.botones {
+		padding-left: 70px;
+		padding-top: 0px;
+	}
+
+	.boxed div.inventory .inventory .title{
+		left: 20px;
+	}
+	.btn-block{
+		width: 100%;
+	}
 .car_heading {
 	margin-left: 214px;
 }

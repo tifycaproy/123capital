@@ -73,15 +73,19 @@
     padding-left: 70px;
 }
 
-#pasos .intro_pasos>img {
+.intro_pasos>img {
     margin: -90px auto 0;
     max-width: 300px;
 }
 
-#pasos .intro_pasos p {
+.big-btn{
+	font-size: 50px !important;
+    height: 80px;
+}
+
+.intro_pasos p {
     color: #d6d6d6;
     font-size: 20rem;
-    font-family: "Barlow Black";
     text-align: center;
     font-weight: 600;
     line-height: 1.1;
@@ -89,7 +93,7 @@
     margin-bottom: 10.5px;
 }
 
-#pasos .intro_pasos {
+.intro_pasos {
     margin-bottom: 90px;
 }
 
@@ -1319,7 +1323,6 @@ table.right_table {
 }
 
 .inner-page.about-us, .inner-page.services, .inner-page.pricing-tables, .inner-page {
-	margin-top: 70px;
 	margin-bottom: 70px;
 }
 
@@ -3409,13 +3412,17 @@ div.custom-select:last-child {
 }
 
 .panel-heading .panel-title>a {
-	font-size: 18px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #2e2e2e;
 }
 
 .faq_post .post-entry img {
 	margin-right: 25px;
+}
+
+.faq_post{
+	font-size: x-large;
 }
 
 .panel-default>.panel-heading+.panel-collapse .panel-body {
@@ -5340,12 +5347,12 @@ div.inventory.span3 .price b {
 	max-width: 690px;
 	font-size: 22px;
 	max-width: 220px;
+	text-align: center;
 }
 
 .boxed div.inventory .preview {
 	position: static;
 	float: none;
-	border: 1px solid #3d3d3d;
 	width: 200px;
 	height: 150px;
 	display: block;
@@ -5370,11 +5377,11 @@ div.inventory.span3 .price b {
 
 .boxed div.inventory .price {
 	position: relative;
-	margin: 3px 0 33px 0;
-	left: 131px;
-	float: left;
-	color: #3d3d3d;
-	top: -22px;
+    margin: 3px 0 33px 0;
+    left: 85px;
+    float: left;
+    color: #3d3d3d;
+    top: 18px;
 }
 
 .boxed.boxed_left div.inventory .price, .boxed.boxed_right div.inventory .price {
@@ -5401,9 +5408,10 @@ div.inventory.span3 .price b {
 
 .boxed div.inventory .figure {
 	font-weight: 600;
-	font-size: 30px;
-	top: 0;
-	left: -8px;
+    font-size: 30px;
+    top: 0;
+    left: -8px;
+    color: #EC4B25;
 }
 
 .boxed div.inventory .tax {
@@ -5455,6 +5463,7 @@ div.inventory.span3 .price b {
 .car_listings.boxed.boxed_full {
 	margin-right: -15px;
 	margin-left: -15px;
+	margin-top: 60px;
 }
 
 .car_listings.boxed.boxed_left {
@@ -5560,7 +5569,6 @@ a.inventory:hover {
 	left: 11px;
 	top: 11px;
 	float: left;
-	border: 1px solid #3d3d3d;
 	width: 200px;
 	height: auto;
 	-webkit-transform: translate3d(0, 0, 0);
