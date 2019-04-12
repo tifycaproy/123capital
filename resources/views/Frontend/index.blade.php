@@ -7,59 +7,35 @@ use Carbon\Carbon;
 
 
 <!-- Home -->
-<div class="clearfix"></div>
+<div class="clearfix">
+
+</div>
 <section class="banner-wrap">
     <div class="banner">
         {{-- FILTRO --}}
-        <div class="col-lg-5 col-xs-12 form-filter" style="">
+        <div class="col-md-8 col-xs-12 form-filter" style="">
             <div class="class=search-form margin-top-20 padding-vertical-20"  >
-                <form class="form-signin inventory-heading efficiency-rating text-center padding-vertical-15 margin-bottom-40 "  action="{{route('coches')}}" method="GET">
-                    <h2 style="text-align: center;" ><b>Filtro de Búsqueda</b></h2>
-                    <br>
-                    <!--select class="form-control">
-                        <option>Elige un tipo de coche</option>
-                        @foreach($tipos as $tipo)
-                            <option value="{{$tipo->id}}">{{$tipo->descripcion}}</option>
-                          @endforeach
-                      </select-->
-
-                      <select class="form-control" name="marca" id="marca">
-                        <option value="">Elige una marca</option>
-                          @foreach($marcas as $marca)
-                            <option value="{{$marca->id}}">{{$marca->descripcion}}</option>
-                          @endforeach
-                      </select>
-
-                      <select class="form-control" name="modelo" id="modelo">
-                        <option value="">Elige un modelo</option>
-                            @foreach($modelos as $modelo)
-                             <option value="{{$modelo->id}}">{{$modelo->descripcion}}</option>
-                            @endforeach
-                      </select>
-                    
-                    <button class="lg-button btn-block" type="submit">Buscar</button>
-                    <br>
-                    <!--h5 style="text-align: center;" >Ver todas las <a href="{{route('registro')}}"><b>Ofertas</b></h5-->
-                </form>
+                <div class="row ">
+                    <h1 class="titulo"><span class="destacado"><strong>Invierte en movilidad,</strong></span> un mercado en constante <span class="destacado">crecimiento.</span></h1>
+                </div>
+                <div class="col-md-6 col-sm-8 botones">
+                    <button class="lg-button btn-block" type="submit">¡Invierte ahora!</button>
+                    <button class="lg-button btn-block btn-2" type="submit">¿Cómo funciona 123Capital?</button>
+                </div>
             </div>
         </div>
         {{-- SLIDER --}}
-        <div id=" carousel-example-generic" class=" col-xs-12 carousel slide" style="padding: 0px" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-            @foreach( $sliders as $slider )
-              <div class="item item hslider {{ $loop->first ? 'active' : '' }}  carrousel" style="background-image: url('/images/sliders/{{$slider->url_imagen}}');   ">
-                <div class="carousel-caption">
-                    <h2 class="a">{{ $slider->titulo }}</h2>
-                    <p>  {!! $slider->contenido !!}</p>
-                </div>
+
+              <div class="item active carrousel" style="background-image: url({{asset('images/slide-2.png')}}) ">
               </div>
-            @endforeach    
+              
             </div>
-            <ol class="carousel-indicators">
-            @foreach( $sliders as $slider )
-              <li data-target="#carouselExampleControls" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
-            @endforeach
-            </ol>
+          
+           
         </div>
     </div>
 </section>
@@ -67,27 +43,39 @@ use Carbon\Carbon;
 <section class="content">
     <div class="container">
 
-            <div class="row generate_new">
-                <div class="inventory_box car_listings boxed boxed_full row">
-                    <h4 class="margin-bottom-25" style="color: #EC4B25; margin-top: 30px"><strong>DESTACADOS</strong> </h4>
-                        @foreach( $vehiculos as $vehiculo )
-
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="height: 250px; overflow: hidden; padding-right: 0px">
-                            <?php  $anio=Carbon::parse($vehiculo->fecha_matriculacion); ?>
-                            <a class="" href="{{url('categorias/listado/detalle/'.$vehiculo->id)}}">
-                                <div class="title" style="font-size: 2rem; color: black; margin-bottom: 10px">{{$vehiculo->marca}} {{$vehiculo->modelo}} {{$anio->year}}</div> 
-                                <div class="" style="background-image: url('{{ url('http://localhost/123subasta/public/images/galeria/'.$vehiculo->img) }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100%; width: 100%">
-                                 
-                                
-                                    <div class="" style="background-color: rgba(0,0,0,.7); position: absolute; bottom: 0; width: 100%; padding: 10px; text-align: center; font-size: 3rem; font-weight: bold">
-                                        $43,995
-                                    </div>
-                                </div>
-                            </a> 
-
-                        </div>
-                        @endforeach
-                </div>
+        <div class="row">
+            <div class="col-sm-12">
+              <h1 class="titulo" style="padding-left: 0px; margin-top: 80px; font-size: 40px;">
+                <strong class="destacado" sty>INVIERTE TU DINERO</strong>
+                <span>en tres sencillos pasos</span>
+              </h1>
+            </div>
+    
+            <div class="col-sm-4">
+              <div class="intro_pasos">
+                <p>1</p>
+                <img src="https://fondea.es/images/fondea/home/intro_paso_1.png" class="img-responsive animation-slideRight">
+                <h3>Elige el <strong class="destacado">VEHÍCULO</strong></h3>
+              </div>        
+            </div>
+    
+            <div class="col-sm-4">
+              <div class="intro_pasos">
+                <p>2</p>
+                <img src="https://fondea.es/images/fondea/home/intro_paso_2.png" class="img-responsive animation-slideDown">
+                <h3>Decide la cantidad que quieres <strong class="destacado">INVERTIR</strong></h3>
+              </div>              
+            </div>
+    
+            <div class="col-sm-4">
+              <div class="intro_pasos">
+                <p>3</p>
+                <img src="https://fondea.es/images/fondea/home/intro_paso_3.png" class="img-responsive animation-slideLeft">
+                <h3>En un máximo de 7 meses recibirás un <strong class="destacado">8%* de RENTABILIDAD</strong></h3>
+                <small class="mas_info"><a href="https://fondea.es/faqs#faqs-accordion-4-row">* Más información</a></small>
+              </div>              
+            </div>
+          </div>
             </div>
 
         <div class="inner-page homepage margin-bottom-none">
@@ -97,38 +85,8 @@ use Carbon\Carbon;
                     <div class="overlay">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft" 
-                                style="visibility: visible; animation-name: bounceInLeft;"> 
-                                <span class="align-center">
-                                    <i style="" class="fas fa-car"></i>
-                                </span>
-                                    <h3>Pymes y Autónomos</h3>
-                                    <p>La forma más fácil de tener tu coche de empresa.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft" 
-                                data-wow-delay=".2s" 
-                                style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInLeft;"> 
-                                <span class="align-center">
-                                    <i style="" class="fas fa-building"></i>
-                                </span>
-                                    <h3>Medianas y Grandes Empresas</h3>
-                                    <p>Externalización de gestión de flota.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInRight" 
-                                data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInRight;"> 
-                                <span class="align-center">
-                                    <i style="" class="fas fa-binoculars"></i>
-                                </span>
-                                    <h3>Sobre 123Coches</h3>
-                                    <p>Conócenos más.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 padding-right-none scroll_effect bounceInRight" 
-                                style="visibility: visible; animation-name: bounceInRight;"> 
-                                <span class="align-center">
-                                    <i style="" class="fas fa-phone"></i>
-                                </span>
-                                    <h3>900 90 65 14</h3>
-                                    <p>Solicita tu presupuesto aquí.</p>
+                                <div class="col-md-10 col-sm-8 col-sm-offset-1">
+                                    <button class="lg-button btn-block big-btn" type="submit"><strong class="invierte">INVIERTE YA DESDE 15.000€</strong></button>
                                 </div>
                             </div>
                         </div>
@@ -136,23 +94,217 @@ use Carbon\Carbon;
                 </div>
             </div>
 
-            <section class="car-block-wrap padding-bottom-40">
+            <section class="content faq">
                     <div class="container">
-                        <div class="row">
-                         @foreach( $noticias as $noticia )
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
-                                <div class=" margin-bottom-30">
-                                    <div class="card">
-                                        <div class="face front"><img class="img-responsive" src="{{ url('/images/noticias/'.$noticia->url_imagen) }}" alt=""></div>
+                        <div class="inner-page">
+                            <div class="row"> 
+                                <!--FAQ LEFT-->
+                                <div class="col-md-12 padding-left-none padding-right-30 md-padding-right-30 xs-padding-right-none xs-padding-bottom-40">
+                                        <div class="col-sm-12">
+                                                <h1 class="titulo" style="padding-left: 0px; ">
+                                                    <strong class="destacado" sty>PREGUNTAS FRECUENTES</strong>
+                                                </h1>
+                                            </div>
+                                    <div class="accodian_panel margin-top-30">
+                                            
+                                        <div class="panel-group description-accordion faq-sort margin-bottom-none" id="accordion"> 
+                                            
+                                            <!--description-->
+                                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Electrical,Navigational,Wiring">
+                                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                                    <h4 class="panel-title padding-left-30"> 
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed" aria-expanded="false">
+                                                            Cuál es la cantidad mínima a invertir? 
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                                    <div class="panel-body"> 
+                                                        <!--Panel_body-->
+                                                        <div class="faq_post padding-left-40">
+                                                            <p>Para poder participar solo es posible haciendo una inversión minima de 15.000€.</p>
+                                                        </div>
+                                                        <!--Panel_body--> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--description--> 
+                                            
+                                            <!--description-->
+                                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Engine,Sunroof,Wiring">
+                                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                                    <h4 class="panel-title padding-left-30"> 
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">
+                                                            Cómo recibo mi rentabilidad?
+                                                        </a> 
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                                    <div class="panel-body"> 
+                                                        <!--Panel_body-->
+                                                        <div class="faq_post padding-left-40">
+                                                            <p>Existen dos variantes, la primera es la liquidación de intereses anual o la liquidación de intereses trimestrales.</p>
+                                                        </div>
+                                                        <!--Panel_body--> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--description--> 
+                                            
+                                            <!-- description-->
+                                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Electrical,Mechanical,Wiring">
+                                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                                    <h4 class="panel-title padding-left-30"> 
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">
+                                                            Cuándo se me devuelve el principal?
+                                                        </a> 
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                                    <div class="panel-body"> 
+                                                        <!--Panel_body-->
+                                                        <div class="faq_post padding-left-40">
+                                                            <p>El principal es devuelto a la finalización del cliclo del renting, los ciclos de 123Renting son de 3 años completos.</p>
+                                                        </div>
+                                                        <!--Panel_body--> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--description--> 
+                                            
+                                            <!--description-->
+                                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Mechanical,Sunroof,Navigational">
+                                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                                    <h4 class="panel-title padding-left-30"> 
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour" class="collapsed" aria-expanded="false"> 
+                                                            Puedo volver a invertir una vez terminado el ciclo? 
+                                                        </a> 
+                                                    </h4>
+                                                </div>
+                                                <div id="collapsefour" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                                    <div class="panel-body"> 
+                                                        <!--Panel_body-->
+                                                        <div class="faq_post padding-left-40">
+                                                            <p>Sí, al finalizar el primer ciclo, podemos reinvertir tus fondos, para que sigas disfrutanto de tu rentabilidad.</p>
+                                                        </div>
+                                                        <!--Panel_body--> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--description--> 
+                                            
+                                            
+                                            
+                                            <!--description-->
+                                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Electrical,Sunroof,Wiring">
+                                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                                    <h4 class="panel-title padding-left-30">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapsenine" class="collapsed" aria-expanded="false">
+                                                            Puedo volver a invertir una vez terminado el ciclo? 
+                                                        </a> 
+                                                    </h4>
+                                                </div>
+                                                <div id="collapsenine" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                                    <div class="panel-body"> 
+                                                        <!--Panel_body-->
+                                                        <div class="faq_post padding-left-40">
+                                                            <div class="post-entry clearfix margin-top-10"> <img src="images/faq-img1.jpg" alt="" class="alignleft">
+                                                                <p>Sí, al finalizar el primer ciclo, podemos reinvertir tus fondos, para que sigas disfrutanto de tu rentabilidad.</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--Panel_body--> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--description--> 
+                                            
+                                        </div>
                                     </div>
                                 </div>
-                                <h4><a href="{{url('noticia/'.$noticia->id)}}">{!! $noticia->titulo!!}</a></h4>
-                                <p class="margin-bottom-none">{!! $noticia->resumen!!}</p>
+                                <!--FAQ LEFT--> 
+                                <!--FAQ LEFT-->
                             </div>
-                       @endforeach
+                        </div>
+                        <!--FAQ RIGHT--> 
+                        
+                    </div>
+                    <!--container ends--> 
+                </section>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="inventory_box car_listings boxed boxed_full row">
+                                <h4 class="margin-bottom-25 margin-top-none" style="color: #EC4B25;"><strong>INVERSIONES</strong> </h4>
+        
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="inventory clearfix margin-bottom-20 styled_input has-photoswipe"> 
+                                    <input type="checkbox" class="checkbox compare_vehicle" id="vehicle_387" data-id="387"> 
+                                    <label for="vehicle_387"></label> 
+                                    
+                                    <a class="inventory" href="">
+                                        <div class="title">Seat León</div> 
+                                        <img src="{{asset('images/destacado_1.png')}}" class="preview" alt="preview" width="200" height="150" data-gallery-images="[{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-1.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-2.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-3.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-4.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-5.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-6.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-7.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-8.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-9.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-10.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-11.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-12.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-13.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-14.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-15.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-16.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-17.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-18.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800}]" data-pswp-uid="1">
+                                            <div class="clearfix"></div> 
+                                        </a>
+                                        <div class="price"> 
+                                            <div class="figure"> $43,995</div>
+                                        </div> 
+                                    </div>
+                                </div>
+        
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inventory clearfix margin-bottom-20 styled_input has-photoswipe"> 
+                                            <input type="checkbox" class="checkbox compare_vehicle" id="vehicle_387" data-id="387"> 
+                                            <label for="vehicle_387"></label> 
+                                            
+                                            <a class="inventory" href="">
+                                                <div class="title">Opel Crossland X</div> 
+                                                <img src="{{asset('images/destacado_2.png')}}" class="preview" alt="preview" width="200" height="150" data-gallery-images="[{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-1.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-2.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-3.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-4.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-5.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-6.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-7.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-8.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-9.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-10.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-11.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-12.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-13.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-14.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-15.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-16.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-17.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-18.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800}]" data-pswp-uid="1">
+                                                    <div class="clearfix"></div> 
+                                            </a>
+                                            <div class="price"> 
+                                                <div class="figure"> $43,995</div>
+                                            </div> 
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inventory clearfix margin-bottom-20 styled_input has-photoswipe"> 
+                                            <input type="checkbox" class="checkbox compare_vehicle" id="vehicle_387" data-id="387"> 
+                                            <label for="vehicle_387"></label> 
+                                                
+                                            <a class="inventory" href="">
+                                                <div class="title">Nissan Qashqai</div> 
+                                                <img src="{{asset('images/destacado_3.png')}}" class="preview" alt="preview" width="200" height="150" data-gallery-images="[{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-1.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-2.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-3.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-4.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-5.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-6.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-7.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-8.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-9.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-10.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-11.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-12.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-13.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-14.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-15.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-16.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-17.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-18.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800}]" data-pswp-uid="1">
+                                                    
+                                                <div class="clearfix"></div> 
+                                            </a>
+                                            <div class="price"> 
+                                                <div class="figure"> $43,995</div>
+                                            </div> 
+                                        </div>
+                                    </div>
+        
+                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="inventory clearfix margin-bottom-20 styled_input has-photoswipe"> 
+                                                <input type="checkbox" class="checkbox compare_vehicle" id="vehicle_387" data-id="387"> 
+                                                <label for="vehicle_387"></label> 
+                                                
+                                                <a class="inventory" href="">
+                                                    <div class="title">Audi Q2</div> 
+                                                    <img src="{{asset('images/destacado_4.png')}}" class="preview" alt="preview" width="200" height="150" data-gallery-images="[{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-1.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-2.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-3.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-4.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-5.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-6.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-7.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-8.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-9.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-10.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-11.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-12.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-13.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-14.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-15.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-16.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-17.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800},{&quot;src&quot;:&quot;https:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/uploads\/2014\/09\/9-carrera-18.jpg&quot;,&quot;w&quot;:3200,&quot;h&quot;:1800}]" data-pswp-uid="1">
+
+                                                        <div class="clearfix"></div> 
+                                                </a>
+                                                    <div class="price"> 
+                                                        <div class="figure"> $43,995</div>
+                                                    </div> 
+                                            </div>
+                                        </div>
+        
                         </div>
                     </div>
-                </section>
+                </div>
             
             <!--nosotros-->
             <section class="welcome-wrap padding-top-30 sm-horizontal-15">
