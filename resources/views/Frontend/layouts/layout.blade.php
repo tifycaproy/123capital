@@ -1,222 +1,346 @@
-
-<html lang="en" class="js no-touch">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{asset('images/favicon_1.ico')}}">
-    <title>@isset ($title) {{ $title }} @endisset</title>
-    <meta name="description" content="@isset ($meta_description) {{ $meta_description }} @endisset">
-    <meta name="image" content="{{asset('images/logo-frioyapty.png')}}">
-    <meta itemprop="name" content="@isset ($meta_name) {{ $meta_name }} @endisset">
-    <meta itemprop="description" content="@isset ($meta_description) {{ $meta_description }} @endisset">
-    <meta itemprop="image" content="{{asset('images/logo.png')}}">
-    <meta name="og:title" content="@isset ($meta_name) {{ $meta_name }} @endisset">
-    <meta name="og:description" content="@isset ($meta_description) {{ $meta_description }} @endisset">
-    <meta name="og:image" itemprop="image" content="{{asset('images/logo-frioyapty.png')}}">
-    <meta name="og:url" content="@isset ($meta_url) {{ $meta_url }} @endisset">
-    <meta name="og:site_name" content="@isset ($meta_name) {{ $meta_name }} @endisset ">
-    <meta name="og:locale" content="en_ES">
-    <meta name="fb:admins" content="@isset ($meta_description) {{ $meta_description }} @endisset">
-    <meta name="og:type" content="website">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template" />
+<meta name="author" content="potenzaglobalsolutions.com" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>123Capital</title>
 
-    <link href="{{asset('css/front/bootstrap.min.css')}}" rel="stylesheet">    
-    <link href="{{ asset('css/front/flexslider.css') }}" rel="stylesheet" type="text/css" media="screen">
-    <link href="{{asset('css/front/jquery.bxslider.css')}}" rel="stylesheet"  type="text/css" media="screen">
-    <link href="{{asset('css/front/jquery.fancybox.css')}}" rel="stylesheet">
-    <link href="{{asset('css/front/jquery.selectbox.css')}}" rel="stylesheet">
-    <link href="{{asset('css/front/style.css')}}" rel="stylesheet">
-    <link href="{{asset('css/front/mobile.css')}}" rel="stylesheet">
-    <link href="{{asset('css/front/settings.css')}}" rel="stylesheet" type="text/css" media="screen">
-    <link href="{{asset('css/front/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/front/ts.css')}}" type="text/css" rel="stylesheet">
-    <link href="{{asset('css/front/signin.css')}}" type="text/css" rel="stylesheet">
-    <link href="{{asset('css/front/responsive.css')}}" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="{{asset('js/front/jquery.min.js')}}"></script>
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
+
+<!-- mega menu -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- owl-carousel -->
+<link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.css" />
+
+<!-- magnific-popup -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup/magnific-popup.css" />
+
+<!-- jquery-ui -->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+
+<!-- revolution -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+
+<!-- main style -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+<!-- Style customizer -->
+<link rel="stylesheet" href="#" data-style="styles" />
+<link rel="stylesheet" type="text/css" href="css/style-customizer.css" />
+<link rel="stylesheet" type="text/css" href="css/skins/skin-orange.css" />
+
     
 
 </head>
 
 <body>
 
-<header data-spy="affix" data-offset-top="1" class="clearfix affix-top">
-    <section class="toolbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 left_bar">
-                    {{-- <ul class="left-none">
-                        <li><a href=""><i class="fas fa-user"></i> Login</a>
+<!--=================================
+ header -->
+
+ <header id="header" class="topbar-dark">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="topbar-left text-lg-left text-center">
+               <ul class="list-inline">
+                 <li> <i class="far fa-envelope"></i> support@website.com</li> 
+                 <li> <i class="far fa-clock-o"></i> Mon - Sat 8.00 - 18.00. Sunday CLOSED</li>
+               </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="topbar-right text-lg-right text-center">
+               <ul class="list-inline">
+                 <li> <i class="fa fa-phone"></i> (007) 123 456 7890</li> 
+                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>   
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>   
+                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>   
+                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>   
+               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--=================================
+     mega menu -->
+    
+    <div class="menu">  
+      <!-- menu start -->
+       <nav id="menu" class="mega-menu">
+        <!-- menu list items container -->
+        <section class="menu-list-items">
+         <div class="container"> 
+          <div class="row"> 
+           <div class="col-md-12"> 
+            <!-- menu logo -->
+            <ul class="menu-logo">
+                <li>
+                    <a href="index.html"><img  src="images/123_logo_d.png" alt="logo"> </a>
+                </li>
+            </ul>
+            <!-- menu links -->
+            <ul class="menu-links">
+                <!-- active class -->
+                <li class="active"><a href="javascript:void(0)"> Home <i class="fas fa-angle-down fa-indicator"></i></a>
+                     <!-- drop down multilevel  -->
+                    <ul class="drop-down-multilevel">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index-2.html">Home 2</a></li>
+                        <li><a href="index-3.html">Home 3</a></li>
+                        <li><a href="index-4.html">Home 4</a></li>
+                        <li><a href="index-5.html">Home 5</a></li>
+                        <li><a href="index-6.html">Home 6</a></li>
+                        <li><a href="index-7.html">Home 7</a></li>
+                        <li><a href="index-8.html">Home 8</a></li>
+                        <li class="active"><a href="index-9.html">Home 9</a></li>
+                        <li><a href="index-10.html">Home 10</a></li>
+                        <li><a href="index-car-service.html">Car service </a></li>
+                        <li><a href="index-car-directory.html"> Car directory</a></li>
+                        <li><a href="index-car-listing.html">Car listing </a></li>
+                        <li><a href="index-landing-page.html">landing page</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Pages <i class="fas fa-angle-down fa-indicator"></i></a>
+                    <!-- drop down full width -->
+                    <div class="drop-down menu-bg grid-col-12">
+                        <!--grid row-->
+                        <div class="grid-row">
+                            <!--grid column 3-->
+                            <div class="grid-col-3">
+                                <ul>
+                                  <li><a href="about-01.html">About 01</a></li>
+                                  <li><a href="about-02.html">About 02</a></li>
+                                  <li><a href="service-01.html">service 01</a></li>
+                                  <li><a href="service-02.html">service 02</a></li>
+                                  <li><a href="career.html">career</a></li>
+                                </ul>
+                            </div>
+                            <!--grid column 3-->
+                            <div class="grid-col-3">
+                                <ul>
+                                  <li><a href="team-01.html">team 01</a></li>
+                                  <li><a href="team-02.html">team 02</a></li>
+                                  <li><a href="contact-01.html">contact 01</a></li>
+                                  <li><a href="contact-02.html">contact 02</a></li>
+                                  <li><a href="faq.html">faq</a></li>
+                                </ul>
+                            </div>
+                            <!--grid column 3-->
+                            <div class="grid-col-3">
+                                <ul>
+                                  <li><a href="login.html">login</a></li>
+                                  <li><a href="register.html">register</a></li>
+                                  <li><a href="error-404.html">error 404</a></li>
+                                  <li><a href="coming-soon.html">coming soon</a></li>
+                                  <li><a href="typography.html">typography</a></li>
+                                </ul>
+                            </div>
+                            <!--grid column 3-->
+                            <div class="grid-col-3">
+                                <ul>
+                                  <li><a href="page-left-sidebar.html">page left sidebar </a></li>
+                                  <li><a href="page-right-sidebar.html">page right sidebar </a></li>
+                                  <li><a href="page-both-sidebar.html">page both sidebar </a></li>
+                                  <li><a href="terms-and-conditions.html">terms and conditions </a></li>
+                                  <li><a href="privacy-policy.html">privacy policy </a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">blog <i class="fas fa-angle-down fa-indicator"></i></a>
+                    <!-- drop down multilevel  -->
+                    <ul class="drop-down-multilevel">
+                        <li><a href="javascript:void(0)">blog classic <i class="fas fa-angle-right fa-indicator"></i> </a>
+                            <!-- drop down second level -->
+                            <ul class="drop-down-multilevel">
+                               <li><a href="blog-left-sidebar.html">left sidebar</a></li>
+                               <li><a href="blog-right-sidebar.html">right sidebar</a></li>
+                               <li><a href="blog-fullwidth.html">fullwidth</a></li>
+                            </ul>
                         </li>
-                        <li><a href=""><i class="fas fa-globe"></i> Languages</a>
+                        <li><a href="javascript:void(0)">Masonry  <i class="fas fa-angle-right fa-indicator"></i> </a>
+                          <!-- drop down second level -->
+                            <ul class="drop-down-multilevel">
+                                <li><a href="blog-masonry-2-collums.html"> 2 column </a> </li>
+                                <li><a href="blog-masonry-3-collums.html"> 3 column </a> </li>
+                                <li><a href="blog-masonry-4-collums.html"> 4 column </a> </li>
+                                <li><a href="blog-masonry-left-sidebar.html">left sidebar</a></li>
+                               <li><a href="blog-masonry-right-sidebar.html">right sidebar</a></li>
+                            </ul> 
                         </li>
-                        <li><i class="fas fa-search"></i>
-                            <input type="search" placeholder="Search" class="search_box">
-                        </li>
-                    </ul> --}}
-                     @isset($instagram)  
-                     <ul class="left-none">
-                         <li><a href="https://www.instagram.com/{{$instagram}}"><i class="fab fa-instagram" style="padding-right: 1rem;"></i></a> </li>
-                        @endisset
-                        @isset($facebook) 
-                        <li><a href="https://www.facebook.com/{{$facebook}}"><i class="fab fa-facebook" style="padding-right: 1rem;"></i></a></li>
-                        @endisset
-                        @isset($twitter) 
-                        <li><a href="https://twitter.com/{{$twitter}}"><i class="fab fa-twitter" style="padding-right: 1rem;"></i></a></li>
-                        @endisset 
-                         </ul>
-                </div>
-                <div class="col-lg-6 ">
-                    <ul class="right-none pull-right company_info">
-                        <li><a href="tel:18005670123"><i class="fas fa-phone"></i>@isset($telefono)
-                                 {{$telefono}}</li>
-                               @endisset </a></li>
-                        <li class="address"><a href="">
-                            <i class="fas fa-map-marker-alt"></i>  @isset($direccion)  {{$direccion}}</li>
-                               @endisset</a>
+                        <li><a href="javascript:void(0)">blog single <i class="fas fa-angle-right fa-indicator"></i> </a>
+                          <!-- drop down second level -->
+                            <ul class="drop-down-multilevel">
+                                <li><a href="blog-single-01.html">blog single 01 </a> </li>
+                                <li><a href="blog-single-02.html">blog single 02 </a> </li>
+                            </ul> 
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-        <div class="toolbar_shadow"></div>
-    </section>
-
-    <div class="bottom-header">
-        <div class="container">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid"> 
-                    
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="navbar-brand" href="{{route('/')}}">
-                            <span class="logo">
-                                <img src="{{asset('images/123_logo.png')}}" alt="">
-                            </span>
-                        </a>
-                    </div>
-                    
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav pull-right">
-                            <li class=" {{ Request::is('/') ? 'active' : '' }}"><a href="{{route('/')}}">Inicio</a></li>
-                            <li class="{{ Request::is('coches*') ? 'active' : '' }}"><a href="{{route('coches')}}">Coches</a></li>
-                                                   
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse --> 
-                </div>
-                <!-- /.container-fluid --> 
-            </nav>
-        </div>
-        <div class="header_shadow"></div>
-    </div>
-</header>
+                </li>
+                <li><a href="javascript:void(0)">Car listing  <i class="fas fa-angle-down fa-indicator"></i></a> 
+                   <!-- drop down multilevel  -->
+                    <ul class="drop-down-multilevel">
+                        <li><a href="listing-01.html">listing 01</a></li>
+                        <li><a href="listing-02.html">listing 02</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Car details  <i class="fas fa-angle-down fa-indicator"></i></a> 
+                   <!-- drop down multilevel  -->
+                    <ul class="drop-down-multilevel">
+                        <li><a href="details-01.html">details 01</a></li>
+                        <li><a href="details-02.html">details 02</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)"> Contact <i class="fas fa-angle-down fa-indicator"></i></a>
+                     <!-- drop down multilevel  -->
+                    <ul class="drop-down-multilevel right-menu">
+                       <li><a href="contact-01.html">contact 01</a></li>
+                       <li><a href="contact-02.html">contact 02</a></li>
+                    </ul>
+                </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </section>
+       </nav>
+      <!-- menu end -->
+     </div>
+    </header>
+    
+    <!--=================================
+     header -->
 
     @yield('contenido')
 
-<footer class="design_2">
-        <div class="container">
-            <div class="row">
+<!--=================================
+ footer -->
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <h4>Menú</h4>
-                            <div class="latest-tweet">
-                                <div><i class="fas fa-home" style="padding-right: 1rem;"></i>
-                                <a href="{{route('/')}}"><b>Inicio</b></a> 
-                                </div>
-    
-                                <div><i class="fas fa-tags" style="padding-right: 1rem;"></i>
-                                    <a href="{{route('coches')}}"><b>Coches</b></a> 
-                                </div>
-    
-                                {{-- <div><i class="fas fa-user" style="padding-right: 1.5rem;"></i>
-                                    <a href="{{route('login')}}"><b>Login</b></a> 
-                                </div> --}}
-                            </div>
-                        </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15">
-                    <h4>Nuestras Redes</h4>
-                    <div class="footer-contact">
-                            
-                        @isset($instagram)  
-                        <div><i class="fab fa-instagram" style="padding-right: 1rem;"></i>
-                                <a href="https://www.instagram.com/{{$instagram}}"><b>Instagram</b></a> 
-                        </div>
-                        @endisset
-                        @isset($facebook) 
-                        <div><i class="fab fa-facebook" style="padding-right: 1rem;"></i>
-                            <a href="https://www.facebook.com/{{$facebook}}"><b>Facebook</b></a> 
-                        </div>
-                        @endisset
-                        @isset($twitter) 
-                         <div><i class="fab fa-twitter" style="padding-right: 1rem;"></i>
-                            <a href="https://twitter.com/{{$twitter}}"><b>Twitter</b></a> 
-                        </div>
-                        @endisset                                    
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15">
-                        <h4>Contáctanos</h4>
-                        <div class="footer-contact">
-                            <ul>
-                               @isset($direccion) 
-                               <li><i class="fas fa-map-marker-alt"></i> <b>Address:</b> {{$direccion}}</li>
-                               @endisset
-                               @isset($telefono)
-                               <li><i class="fas fa-phone"></i> <b>Phone:</b> {{$telefono}}</li>
-                               @endisset
-                               @isset($email)
-                               <li><i class="fas fa-envelope"></i> <b>Email:</b> {{$email}}</li>
-                               @endisset
-                            </ul>
-        
-                            {{-- <i class="fas fa-location-arrow back_icon"></i> --}}
-                        </div>
-                    </div>
-
-            </div>
+ <footer class="footer footer-black bg-2 bg-overlay-black-90">
+    <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+        <div class="social">
+          <ul>
+            <li><a class="facebook" href="#"> <i class="fab fa-facebook-f"></i> &nbsp &nbsp facebook</a></li>
+            <li><a class="twitter" href="#"> <i class="fab fa-twitter"></i> &nbsp &nbsp twitter</a></li>
+            <li><a class="dribbble" href="#"> <i class="fab fa-instagram"></i> &nbsp &nbsp instagram</a></li>
+            <li><a class="google-plus" href="#"> <i class="fab fa-youtube"></i> &nbsp &nbsp Youtube </a></li>
+          </ul>
+         </div>
         </div>
-</footer>
+      </div>
+      
+  
+    <div class="copyright">
+     <div class="container">
+       <div class="row">
+        <div class="col-lg-6 col-md-12">
+         <div class="text-lg-left text-center">
+          <p>Developed by <a href="http://www.google.com/" target="_blank">TIFYCA</a></p>
+         </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <ul class="list-inline text-lg-right text-center">
+            <li><a href="#">Políticas de privacidad </a> | </li> 
+            <li><a href="#">Términos y condiciones </a> </li> 
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+  </footer>
+  
+   <!--=================================
+   footer -->
 
-<div class="back_to_top" style="display: none; padding-top: 15px;"> <img src="{{asset('images/arrow-up.png')}}" alt=""> </div>
+ <!--=================================
+ back to top -->
 
+ <div class="car-top">
+    <span><img src="images/car.png" alt=""></span>
+  </div>
+  
+   <!--=================================
+   back to top -->
 
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/onion.js')}}"></script> --}}
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/stats.js')}}"></script> --}}
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/controls.js')}}"></script> --}}
-<script type="text/javascript" src="{{asset('js/front/wow.min.js')}}"></script>
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/front/common.js')}}"></script> --}}
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/front/util.js')}}"></script> --}}
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/front/map.js')}}"></script> --}}
-{{-- <script type="text/javascript" charset="UTF-8" src="{{asset('js/front/marker.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/jquery.themepunch.tools.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/jquery.themepunch.revolution.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.actions.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.carousel.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.kenburn.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.layeranimation.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.migration.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.navigation.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.parallax.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.slideanims.min.js')}}"></script> --}}
-{{-- <script type="text/javascript" src="{{asset('js/front/revolution.extension.video.min.js')}}"></script> --}}
-<script src="{{asset('js/front/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/front/jquery.min.js')}}"></script>
-{{-- <script src="{{asset('js/front/retina.js')}}"></script>  --}}
-<script type="text/javascript" src="{{asset('js/front/jquery.parallax.js')}}"></script> 
-{{-- <script type="text/javascript" src="{{asset('js/front/jquery.inview.min.js')}}"></script>  --}}
-<script src="{{asset('js/front/main.js')}}"></script> 
-{{-- <script type="text/javascript" src="{{asset('js/front/jquery.fancybox.js')}}"></script>  --}}
-<script src="{{asset('js/front/modernizr.custom.js')}}"></script> 
-<script defer="" src="{{asset('js/front/jquery.flexslider.js')}}"></script> 
-{{-- <script src="{{asset('js/front/jquery.bxslider.js')}}" type="text/javascript"></script>  --}}
-<script src="{{asset('js/front/jquery.selectbox-0.2.js')}}" type="text/javascript"></script> 
-<script type="text/javascript" src="{{asset('js/front/jquery.mousewheel.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/front/jquery.easing.js')}}"></script>
+<!--=================================
+ jquery -->
+
+<!-- jquery  -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ 
+<!-- bootstrap -->
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- mega-menu -->
+<script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+
+<!-- appear -->
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+
+<!-- counter -->
+<script type="text/javascript" src="js/counter/jquery.countTo.js"></script>
+
+<!-- isotope -->
+<script type="text/javascript" src="js/isotope/isotope.pkgd.min.js"></script>
+
+<!-- owl-carousel -->
+<script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- jquery-ui -->
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+<!-- select -->
+<script type="text/javascript" src="js/select/jquery-select.js"></script>
+
+<!-- magnific popup -->
+<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- revolution -->
+<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<!-- custom -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!-- style customizer  -->
+<script type="text/javascript" src="js/style-customizer.js"></script>
 
 @stack('scripts')
 </body>
