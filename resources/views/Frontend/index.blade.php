@@ -12,8 +12,8 @@ use Carbon\Carbon;
   
   <div id="loading">
     <div id="loading-center">
-        <img src="images/123capital_logo.png" style="width: 200px; top: 22rem;     z-index: 1;" alt="">  
-        <img src="images/loader.gif" style="z-index: 0;" alt="">
+        <img src="{{asset('images/123capital_logo.png')}}" style="width: 200px; top: 22rem; z-index: 1;" alt="">  
+        <img src="{{asset('images/loader.gif')}}" style="z-index: 0;" alt="">
    </div>
   </div>
   
@@ -31,9 +31,9 @@ use Carbon\Carbon;
   <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
     <div id="rev_slider_8_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
   <ul>  <!-- SLIDE  -->
-      <li data-index="rs-15" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="revolution/assets/slider-9/100x50_mainbg-3.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+      <li data-index="rs-15" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{asset('revolution/assets/slider-9/100x50_mainbg-3.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
       <!-- MAIN IMAGE -->
-          <img src="revolution/assets/slider-9/mainbg-3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+          <img src="{{asset('revolution/assets/slider-9/mainbg-3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
       <!-- LAYERS -->
   
       <!-- LAYER NR. 1 -->
@@ -51,7 +51,7 @@ use Carbon\Carbon;
         data-responsive_offset="on" 
   
         
-        style="z-index: 5;"><img src="revolution/assets/slider-9/red-car.png" alt="" data-ww="1139px" data-hh="359px" data-no-retina> </div>
+        style="z-index: 5;"><img src="{{asset('revolution/assets/slider-9/red-car.png')}}" alt="" data-ww="1139px" data-hh="359px" data-no-retina> </div>
   
       <!-- LAYER NR. 2 -->
       <div class="tp-caption   tp-resizeme" 
@@ -115,9 +115,9 @@ use Carbon\Carbon;
         style="z-index: 8; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600;font-family:Open Sans;text-transform:capitalize;font-style:italic;padding:12px 35px 12px 35px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Invierte Ahora</div>
     </li>
     <!-- SLIDE  -->
-      <li data-index="rs-16" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="revolution/assets/slider-9/100x50_mainbg-3.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+      <li data-index="rs-16" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{asset('revolution/assets/slider-9/100x50_mainbg-3.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
       <!-- MAIN IMAGE -->
-          <img src="revolution/assets/slider-9/mainbg-3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+          <img src="{{asset('revolution/assets/slider-9/mainbg-3.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
       <!-- LAYERS -->
   
       <!-- LAYER NR. 1 -->
@@ -135,7 +135,7 @@ use Carbon\Carbon;
         data-responsive_offset="on" 
   
         
-        style="z-index: 5;"><img src="revolution/assets/slider-9/leftside-car.png" alt="" data-ww="777px" data-hh="245px" data-no-retina> </div>
+        style="z-index: 5;"><img src="{{asset('revolution/assets/slider-9/leftside-car.png')}}" alt="" data-ww="777px" data-hh="245px" data-no-retina> </div>
   
       <!-- LAYER NR. 2 -->
       <div class="tp-caption   tp-resizeme" 
@@ -152,7 +152,7 @@ use Carbon\Carbon;
         data-responsive_offset="on" 
   
         
-        style="z-index: 6;"><img src="revolution/assets/slider-9/rightside-car.png" alt="" data-ww="777px" data-hh="245px" data-no-retina> </div>
+        style="z-index: 6;"><img src="{{asset('revolution/assets/slider-9/rightside-car.png')}}" alt="" data-ww="777px" data-hh="245px" data-no-retina> </div>
   
       <!-- LAYER NR. 3 -->
       <div class="tp-caption   tp-resizeme" 
@@ -228,7 +228,7 @@ use Carbon\Carbon;
    <div class="container">
    <div class="row">
    <div id="loading-center">
-        <img src="images/loader.gif" style="z-index: 0;top: 100px; width: 45%;" alt="">
+        <img src="{{asset('images/loader.gif')}}" style="z-index: 0;top: 100px; width: 45%;" alt="">
    </div>
       <div class="col-md-12">
         <div class="section-title">
@@ -253,7 +253,7 @@ use Carbon\Carbon;
     <div class="row row-eq-height no-gutter">
       <div class="col-md-4 content-box-6">
         <div class="feature-box-4">
-        <img src="images/1.png" style="padding-bottom: 2rem;">
+        <img src="{{asset('images/1.png')}}" style="padding-bottom: 2rem;">
            <div class="content">
              <h6 class="text-white">Elige el VEHÍCULO</h6>
              <p class="text-white">We provide everything you need to build an Amazing dealership website developed especially for car sellers, dealers or auto motor retailers. </p>
@@ -263,7 +263,7 @@ use Carbon\Carbon;
       </div>
       <div class="col-md-4 content-box-6">
         <div class="feature-box-4">
-        <img src="images/2.png" style="padding-bottom: 2rem;">
+        <img src="{{asset('images/2.png')}}" style="padding-bottom: 2rem;">
            <div class="content">
              <h6 class="text-white">Decide la cantidad que quieres INVERTIR</h6>
              <p class="text-white">Whether you are looking at buying your dream car or selling a classic or collector car, Car dealer has thousands of premium classics for sale in our online Inventory.  </p>
@@ -273,7 +273,7 @@ use Carbon\Carbon;
       </div>
       <div class="col-md-4 content-box-6">
         <div class="feature-box-4">
-        <img src="images/3.png" style="padding-bottom: 2rem;">
+        <img src="{{asset('images/3.png')}}" style="padding-bottom: 2rem;">
            <div class="content">
              <h6 class="text-white">Recibe un 24% de rentabilidad garantizado</h6>
              <p class="text-white">American classic cars, muscle cars, exotics, and late model classics are available from private sellers, specialty dealers, and collector car auctions located around the World. </p>
@@ -320,11 +320,11 @@ use Carbon\Carbon;
           <div class="grid-item mercedes audi" style="position: absolute; left: 0px; top: 0px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/01.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/01.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -332,7 +332,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -355,11 +355,11 @@ use Carbon\Carbon;
            <div class="grid-item bmw audi" style="position: absolute; left: 285px; top: 0px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/02.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/02.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -367,7 +367,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -390,11 +390,11 @@ use Carbon\Carbon;
            <div class="grid-item mercedes hyundai" style="position: absolute; left: 570px; top: 0px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/03.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/03.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -402,7 +402,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -425,11 +425,11 @@ use Carbon\Carbon;
            <div class="grid-item bmw audi" style="position: absolute; left: 855px; top: 0px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/04.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/04.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -437,7 +437,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -460,11 +460,11 @@ use Carbon\Carbon;
            <div class="grid-item mercedes hyundai" style="position: absolute; left: 0px; top: 350px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/05.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/05.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -472,7 +472,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -495,11 +495,11 @@ use Carbon\Carbon;
            <div class="grid-item bmw audi hyundai" style="position: absolute; left: 285px; top: 350px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/06.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/06.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -507,7 +507,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -530,11 +530,11 @@ use Carbon\Carbon;
            <div class="grid-item bmw hyundai" style="position: absolute; left: 570px; top: 350px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/07.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/07.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -542,7 +542,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -565,11 +565,11 @@ use Carbon\Carbon;
            <div class="grid-item mercedes hyundai" style="position: absolute; left: 855px; top: 350px;">
             <div class="car-item text-center">
                <div class="car-image">
-                 <img class="img-fluid" src="images/car/01.jpg" alt="">
+                 <img class="img-fluid" src="{{asset('images/car/01.jpg')}}" alt="">
                  <div class="car-overlay-banner">
                   <ul> 
                     <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
                    </ul>
                  </div>
                </div>
@@ -577,7 +577,7 @@ use Carbon\Carbon;
                  <ul class="list-inline">
                    <li><i class="fa fa-registered"></i> 2017</li>
                    <li><i class="fa fa-cog"></i> Manual </li>
-                   <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                   <li><i class="fas fa-tachometer-alt"></i> 6,000 mi</li>
                  </ul>
               </div>
                <div class="car-content">
@@ -642,7 +642,7 @@ use Carbon\Carbon;
        <div class="row justify-content-center">
          <div class="col-lg-10 col-md-12">
            <div class="video-info text-center">
-             <img class="img-fluid center-block" src="images/car/24.jpg" alt="">
+             <img class="img-fluid center-block" src="{{asset('images/car/24.jpg')}}" alt="">
              <a class="popup-youtube" href="https://www.youtube.com/watch?v=Xd0Ok-MkqoE"> <i class="fa fa-play"></i> </a>
            </div>
          </div>
@@ -668,7 +668,7 @@ use Carbon\Carbon;
        <div class="col-lg-4">
           <div class="blog-2">
             <div class="blog-image">
-              <img class="img-fluid" src="images/blog/05.jpg" alt="">
+              <img class="img-fluid" src="{{asset('images/blog/05.jpg')}}" alt="">
               <div class="date">
                 <span>ago 17</span>
               </div>
@@ -676,7 +676,7 @@ use Carbon\Carbon;
             <div class="blog-content">
               <div class="blog-admin-main">
                <div class="blog-admin">
-                <img class="img-fluid" src="images/team/01.jpg" alt="">
+                <img class="img-fluid" src="{{asset('images/team/01.jpg')}}" alt="">
                 <span>John Doe</span>
                </div>
                <div class="blog-meta float-right">
@@ -706,7 +706,7 @@ use Carbon\Carbon;
      <div class="col-lg-4">
           <div class="blog-2">
             <div class="blog-image">
-              <img class="img-fluid" src="images/blog/06.jpg" alt="">
+              <img class="img-fluid" src="{{asset('images/blog/06.jpg')}}" alt="">
               <div class="date">
                 <span>ago 17</span>
               </div>
@@ -714,7 +714,7 @@ use Carbon\Carbon;
             <div class="blog-content">
               <div class="blog-admin-main">
                <div class="blog-admin">
-                <img class="img-fluid" src="images/team/02.jpg" alt="">
+                <img class="img-fluid" src="{{asset('images/team/02.jpg')}}" alt="">
                 <span>Paul Flavius</span>
                </div>
                <div class="blog-meta float-right">
@@ -744,7 +744,7 @@ use Carbon\Carbon;
        <div class="col-lg-4">
           <div class="blog-2">
             <div class="blog-image">
-              <img class="img-fluid" src="images/blog/07.jpg" alt="">
+              <img class="img-fluid" src="{{asset('images/blog/07.jpg')}}" alt="">
               <div class="date">
                 <span>ago 17</span>
               </div>
@@ -752,7 +752,7 @@ use Carbon\Carbon;
             <div class="blog-content">
               <div class="blog-admin-main">
                <div class="blog-admin">
-                <img class="img-fluid" src="images/team/03.jpg" alt="">
+                <img class="img-fluid" src="{{asset('images/team/03.jpg')}}" alt="">
                 <span>Sara Lisbon</span>
                </div>
                <div class="blog-meta float-right">
@@ -817,185 +817,84 @@ use Carbon\Carbon;
         </div>
         </div>
       </div>
-     <div class="row">
-      <div class="col-md-12">
-       <div class="owl-carousel owl-theme owl-loaded owl-drag" data-nav-dots="true" data-nav-arrow="false " data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="20">
-        
-          
-        
-        
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1160px, 0px, 0px); transition: all 0.25s ease 0s; width: 3867px;"><div class="owl-item cloned" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/02.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/02.jpg" alt="">
-                 <h6>Michael Bean</h6>
-                 <span>Car Dealer</span>
+      <div class="row">
+        <div class="col-md-12">
+         <div class="owl-carousel owl-theme" data-nav-dots="true" data-nav-arrow="false " data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="20">
+          <div class="item">
+            <div class="testimonial-block text-center">
+               <div class="testimonial-image">
+                 <img class="img-fluid" src="{{asset('images/testimonial/01.jpg')}}" alt="">
+               </div> 
+               <div class="testimonial-box">
+                 <div class="testimonial-avtar">
+                   <img class="img-fluid" src="{{asset('images/team/01.jpg')}}" alt="">
+                   <h6>Alice Williams</h6>
+                   <span>Auto Dealer</span>
+                 </div>
+                 <div class="testimonial-content">               
+                    <p>It has survived not only five centuries. lorem Ipsum is simply dummy text of the printin a galley of type and bled it to make a type specimen book.</p>
+                    <i class="fa fa-quote-right"></i>
+                 </div>
                </div>
-               <div class="testimonial-content">               
-                  <p>A galley of type and bled it to make a type specimen book. Ipsum is simply dummy text of the printin It has survived not only five centuries.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
+            </div>
           </div>
-        </div></div><div class="owl-item cloned" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/03.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/03.jpg" alt="">
-                 <h6>Felica Queen</h6>
-                 <span>Auto Dealer</span>
+         <div class="item">
+            <div class="testimonial-block text-center">
+               <div class="testimonial-image">
+                 <img class="img-fluid" src="{{asset('images/testimonial/02.jpg')}}" alt="">
+               </div> 
+               <div class="testimonial-box">
+                 <div class="testimonial-avtar">
+                   <img class="img-fluid" src="{{asset('images/team/02.jpg')}}" alt="">
+                   <h6>Michael Bean</h6>
+                   <span>Car Dealer</span>
+                 </div>
+                 <div class="testimonial-content">               
+                    <p>A galley of type and bled it to make a type specimen book. Ipsum is simply dummy text of the printin It has survived not only five centuries.</p>
+                    <i class="fa fa-quote-right"></i>
+                 </div>
                </div>
-               <div class="testimonial-content">               
-                  <p>Text of the printin a galley of type and bled it to a type specimen book. It has survived not only five centuries make Lorem Ipsum is simply dummy.</p>
-                  <i class="fa fa-quote-right"></i>
+            </div>
+          </div>   
+          <div class="item">
+            <div class="testimonial-block text-center">
+               <div class="testimonial-image">
+                 <img class="img-fluid" src="{{asset('images/testimonial/03.jpg')}}" alt="">
+               </div> 
+               <div class="testimonial-box">
+                 <div class="testimonial-avtar">
+                   <img class="img-fluid" src="{{asset('images/team/03.jpg')}}" alt="">
+                   <h6>Felica Queen</h6>
+                   <span>Auto Dealer</span>
+                 </div>
+                 <div class="testimonial-content">               
+                    <p>Text of the printin a galley of type and bled it to a type specimen book. It has survived not only five centuries make Lorem Ipsum is simply dummy.</p>
+                    <i class="fa fa-quote-right"></i>
+                 </div>
                </div>
-             </div>
+            </div>
           </div>
-        </div></div><div class="owl-item cloned" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/04.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/04.jpg" alt="">
-                 <h6>Sara Lisbon</h6>
-                 <span>Customer</span>
+          <div class="item">
+            <div class="testimonial-block text-center">
+               <div class="testimonial-image">
+                 <img class="img-fluid" src="{{asset('images/testimonial/04.jpg')}}" alt="">
+               </div> 
+               <div class="testimonial-box">
+                 <div class="testimonial-avtar">
+                   <img class="img-fluid" src="{{asset('images/team/04.jpg')}}" alt="">
+                   <h6>Sara Lisbon</h6>
+                   <span>Customer</span>
+                 </div>
+                 <div class="testimonial-content">               
+                    <p>Printin a galley of type and bled It has survived not lorem Ipsum is simply dummy text of the  it to make a type specimen book only five centuries.</p>
+                    <i class="fa fa-quote-right"></i>
+                 </div>
                </div>
-               <div class="testimonial-content">               
-                  <p>Printin a galley of type and bled It has survived not lorem Ipsum is simply dummy text of the  it to make a type specimen book only five centuries.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
+            </div>
           </div>
-        </div></div><div class="owl-item active" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/01.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/01.jpg" alt="">
-                 <h6>Alice Williams</h6>
-                 <span>Auto Dealer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>It has survived not only five centuries. lorem Ipsum is simply dummy text of the printin a galley of type and bled it to make a type specimen book.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
           </div>
-        </div></div><div class="owl-item active" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/02.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/02.jpg" alt="">
-                 <h6>Michael Bean</h6>
-                 <span>Car Dealer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>A galley of type and bled it to make a type specimen book. Ipsum is simply dummy text of the printin It has survived not only five centuries.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
-          </div>
-        </div></div><div class="owl-item active" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/03.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/03.jpg" alt="">
-                 <h6>Felica Queen</h6>
-                 <span>Auto Dealer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>Text of the printin a galley of type and bled it to a type specimen book. It has survived not only five centuries make Lorem Ipsum is simply dummy.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
-          </div>
-        </div></div><div class="owl-item" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/04.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/04.jpg" alt="">
-                 <h6>Sara Lisbon</h6>
-                 <span>Customer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>Printin a galley of type and bled It has survived not lorem Ipsum is simply dummy text of the  it to make a type specimen book only five centuries.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
-          </div>
-        </div></div><div class="owl-item cloned" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/01.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/01.jpg" alt="">
-                 <h6>Alice Williams</h6>
-                 <span>Auto Dealer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>It has survived not only five centuries. lorem Ipsum is simply dummy text of the printin a galley of type and bled it to make a type specimen book.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
-          </div>
-        </div></div><div class="owl-item cloned" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/02.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/02.jpg" alt="">
-                 <h6>Michael Bean</h6>
-                 <span>Car Dealer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>A galley of type and bled it to make a type specimen book. Ipsum is simply dummy text of the printin It has survived not only five centuries.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
-          </div>
-        </div></div><div class="owl-item cloned" style="width: 366.667px; margin-right: 20px;"><div class="item">
-          <div class="testimonial-block text-center">
-             <div class="testimonial-image">
-               <img class="img-fluid" src="images/testimonial/03.jpg" alt="">
-             </div> 
-             <div class="testimonial-box">
-               <div class="testimonial-avtar">
-                 <img class="img-fluid" src="images/team/03.jpg" alt="">
-                 <h6>Felica Queen</h6>
-                 <span>Auto Dealer</span>
-               </div>
-               <div class="testimonial-content">               
-                  <p>Text of the printin a galley of type and bled it to a type specimen book. It has survived not only five centuries make Lorem Ipsum is simply dummy.</p>
-                  <i class="fa fa-quote-right"></i>
-               </div>
-             </div>
-          </div>
-       </div>
-      </div>
+         </div>
+        </div>
      </div>
     </section>
   
@@ -1119,7 +1018,7 @@ use Carbon\Carbon;
                  </div>
                 </div>
             </form>
-            <div id="ajaxloader" style="display:none"><img class="center-block" src="images/ajax-loader.gif" alt=""></div> 
+            <div id="ajaxloader" style="display:none"><img class="center-block" src="{{asset('images/ajax-loader.gif')}}" alt=""></div> 
              </div> 
          </div>
         
@@ -1168,7 +1067,7 @@ if(tpj("#rev_slider_8_1").revolution == undefined){
           h_offset:20,
                             v_offset:0
         }
-      }
+      } 
     },
     visibilityLevels:[1240,1024,778,480],
     gridwidth:1920,

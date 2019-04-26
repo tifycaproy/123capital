@@ -1,53 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+<!-- COMMON TAGS -->
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="HTML5 Template" />
-<meta name="description" content="Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template" />
-<meta name="author" content="potenzaglobalsolutions.com" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>123 Capital</title>
+<!-- Search Engine -->
+<meta name="description" content="Somos la primera plataforma de inversión colectiva con la que puedes obtener hasta un 24%* de rentabilidad al invertir en vehículos de lujo.">
+<meta name="keywords" content="Inversión, inversiones, invertir en coches, invertir en vehículos, negocio rentable, invertir dinero, negocio para invertir, en qué invertir, dónde invertir, inversiones rentables, proyectos para invertir">
+<meta name="image" content="https://www.123capital.com/123capital_logo.png">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="123 Capital">
+<meta itemprop="description" content="Somos la primera plataforma de inversión colectiva con la que puedes obtener hasta un 24%* de rentabilidad al invertir en vehículos de lujo.">
+<meta itemprop="image" content="https://www.123capital.com/123capital_logo.png">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="123 Capital">
+<meta name="og:description" content="Somos la primera plataforma de inversión colectiva con la que puedes obtener hasta un 24%* de rentabilidad al invertir en vehículos de lujo.">
+<meta name="og:image" content="https://www.123capital.com/123capital_logo.png">
+<meta name="og:url" content="https://www.123capital.com">
+<meta name="og:site_name" content="123 Capital">
+<meta name="og:locale" content="es_ES">
+<meta name="og:type" content="website">
+
+
 <title>123Capital</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" />
 
 <!-- bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}" />
 
 <!-- flaticon -->
-<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/flaticon.css')}}" />
 
 <!-- mega menu -->
-<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/mega-menu/mega_menu.css')}}" />
 
 <!-- mega menu -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <!-- owl-carousel -->
-<link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/owl-carousel/owl.carousel.css')}}" />
 
 <!-- magnific-popup -->
-<link rel="stylesheet" type="text/css" href="css/magnific-popup/magnific-popup.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/magnific-popup/magnific-popup.css')}}" />
 
 <!-- jquery-ui -->
-<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/jquery-ui.css')}}" />
 
 <!-- revolution -->
-<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+<link rel="stylesheet" type="text/css" href="{{asset('revolution/css/settings.css')}}">
 
 <!-- main style -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 
 <!-- responsive -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css')}}" />
 
 <!-- Style customizer -->
 <link rel="stylesheet" href="#" data-style="styles" />
-<link rel="stylesheet" type="text/css" href="css/style-customizer.css" />
-<link rel="stylesheet" type="text/css" href="css/skins/skin-orange.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/style-customizer.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/skins/skin-orange.css')}}" />
 
-    
+     
 
 </head>
 
@@ -97,11 +112,11 @@
             <!-- menu logo -->
             <ul class="menu-logo">
                 <li>
-                    <a href="index.html"><img  src="images/123_logo_d.png" alt="logo"> </a>
+                    <a href="index.html"><img  src="{{asset('images/123_logo_d.png')}}" alt="logo"> </a>
                 </li>
             </ul>
             <!-- menu links -->
-            <ul class="menu-links">
+            {{-- <ul class="menu-links">
                 <!-- active class -->
                 <li class="active"><a href="javascript:void(0)"> Home <i class="fas fa-angle-down fa-indicator"></i></a>
                      <!-- drop down multilevel  -->
@@ -222,7 +237,7 @@
                        <li><a href="contact-02.html">contact 02</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> --}}
            </div>
           </div>
          </div>
@@ -261,7 +276,7 @@
        <div class="row">
         <div class="col-lg-6 col-md-12">
          <div class="text-lg-left text-center">
-          <p>Developed by <a href="http://www.google.com/" target="_blank">TIFYCA</a></p>
+          <p>Desarrollado por <a href="http://www.google.com/" target="_blank">TIFYCA</a></p>
          </div>
         </div>
         <div class="col-lg-6 col-md-12">
@@ -282,7 +297,7 @@
  back to top -->
 
  <div class="car-top">
-    <span><img src="images/car.png" alt=""></span>
+    <span><img src="{{asset('images/car.png')}}" alt=""></span>
   </div>
   
    <!--=================================
@@ -292,55 +307,55 @@
  jquery -->
 
 <!-- jquery  -->
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
  
 <!-- bootstrap -->
-<script type="text/javascript" src="js/popper.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{asset('js/popper.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 
 <!-- mega-menu -->
-<script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+<script type="text/javascript" src="{{asset('js/mega-menu/mega_menu.js')}}"></script>
 
 <!-- appear -->
-<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery.appear.js')}}"></script>
 
 <!-- counter -->
-<script type="text/javascript" src="js/counter/jquery.countTo.js"></script>
+<script type="text/javascript" src="{{asset('js/counter/jquery.countTo.js')}}"></script>
 
 <!-- isotope -->
-<script type="text/javascript" src="js/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="{{asset('js/isotope/isotope.pkgd.min.js')}}"></script>
 
 <!-- owl-carousel -->
-<script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{{asset('js/owl-carousel/owl.carousel.min.js')}}"></script>
 
 <!-- jquery-ui -->
-<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery-ui.js')}}"></script>
 
 <!-- select -->
-<script type="text/javascript" src="js/select/jquery-select.js"></script>
+<script type="text/javascript" src="{{asset('js/select/jquery-select.js')}}"></script>
 
 <!-- magnific popup -->
-<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="{{asset('js/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 
 <!-- revolution -->
-<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="{{asset('revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
 
 <!-- custom -->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
 
 <!-- style customizer  -->
-<script type="text/javascript" src="js/style-customizer.js"></script>
+<script type="text/javascript" src="{{asset('js/style-customizer.js')}}"></script>
 
 @stack('scripts')
 </body>
