@@ -92,6 +92,8 @@ label { font-size: 15px; font-weight: 400; color: #626262; }
 ::-moz-selection { background: #db2d2e; color: #fff; text-shadow: none; }
 ::selection { background: #db2d2e; color: #fff; text-shadow: none; }
 
+.gif{z-index: 0; top: 100px; width: 45%;}
+
 /***************************
    Typography
 ****************************/
